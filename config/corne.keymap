@@ -36,15 +36,15 @@
                 };
                 LAYER1 {
 // -----------------------------------------------------------------------------------------
-// |  ~   |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
-// | ctrl/tab |     |     |LtDesk|AllDesk|RtDesk|   |PgUp | Left|  UP | RGT |Home |      |
-// | shft/DEL |     |     |     |     |     |   |PgDn |     |Down |  .  |End  | RET  |
+// |  ~   |  1  |  2  |  3  |  4  |  5        |   |  6  |  7  |  8  |  9  |  0  | BKSP |
+// | ctrl/tab |PgUp|Home|LtDesk|AllDesk|RtDesk|   |     | Left|  UP | RGT |Home |      |
+// | shft/DEL |PgDn|End |     |     |         |   |     |     |Down |  .  |End  | RET  |
 //                    | GUI | SPC | L0  |   |  L2 | SPC | ALT |
                         display-name = "Layer 1";
                         bindings = <
-   &kp TILDE    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp BSPC
-   &mt LCTRL TAB   &trans   &trans   &kp LC(LEFT) &kp LC(UP) &kp LC(RIGHT) &kp PG_UP  &kp LEFT &kp UP &kp RIGHT   &kp HOME &trans
-   &mt LSHFT DEL  &trans       &trans       &trans       &trans       &trans         &kp PG_DN   &trans   &kp DOWN  &kp DOT  &kp END  &kp RET
+   &kp TILDE      &kp N1      &kp N2     &kp N3       &kp N4     &kp N5         &kp N6  &kp N7   &kp N8   &kp N9  &kp N0    &kp BSPC
+   &mt LCTRL TAB  &kp PG_UP   &kp HOME   &kp LC(LEFT) &kp LC(UP) &kp LC(RIGHT)  &trans  &kp LEFT &kp DOWN &kp UP  &kp RIGHT &trans
+   &mt LSHFT DEL  &kp PG_DN   &kp END    &trans       &trans     &trans         &trans  &trans   &trans   &trans  &trans    &trans
                     &kp LGUI     &kp SPACE    &to 0  &to 2  &kp SPACE  &kp RALT
                         >;
                 };
