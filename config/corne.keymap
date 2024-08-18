@@ -17,16 +17,19 @@
 - for L1 add a mod layer shift, if tap layer 1, if held engage layer 3
 */
 
+
 //special behaviors
-lt_lh: layer_tap_layer_hold {
-    compatible = "zmk,behavior-hold-tap";
-    label = "LAYER_TAP_LAYER_HOLD";
-    #binding-cells = <2>;
-    bindings = <&mo>, <&to>;
-    tapping-term-ms = <200>;
+/ {
+    behaviors {
+        lt_lh: layer_tap_layer_hold {
+        compatible = "zmk,behavior-hold-tap";
+        label = "LAYER_TAP_LAYER_HOLD";
+        #binding-cells = <2>;
+        bindings = <&mo>, <&to>;
+        tapping-term-ms = <200>;
+        };
+    };
 };
-
-
 
 / {
         keymap {
