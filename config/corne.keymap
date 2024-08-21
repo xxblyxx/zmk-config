@@ -28,11 +28,11 @@
                 bindings = <&mo>, <&to>;
                 tapping-term-ms = <200>;
         };
-        fsl_bsl: forward_backward_slash {
+        gresc: grave_escape {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp FSLH>, <&kp BSLH>;
-            mods = <MOD_LCTRL>;
+            bindings = <&kp ESC>, <&kp GRAVE>;
+            mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
         };
     };
 };
