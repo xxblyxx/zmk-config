@@ -38,7 +38,7 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp FSLH>, <&kp BSLH>;
-            mods = <(MOD_LCTL)>;
+            mods = <(MOD_LCTL|MOD_RCTL)>;
         };
     };
 };
