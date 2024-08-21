@@ -32,13 +32,13 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp ESC>, <&kp GRAVE>;
-            mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
+            mods = <(<(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
         };
         fsl_bsl: forward_backward_slash {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp FSLH>, <&kp BSLH>;
-            mods = <(MOD_LGUI|MOD_LSFT)>;
+            mods = <(MOD_LCTRL|MOD_LGUI)>;
         };
     };
 };
