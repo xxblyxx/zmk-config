@@ -26,6 +26,8 @@
                 label = "LAYER_TAP_LAYER_HOLD";
                 #binding-cells = <2>;
                 bindings = <&mo>, <&to>;
+                flavor = "tap-preferred";
+                quick-tap-ms = <125>;
                 tapping-term-ms = <200>;
         };
         gresc: grave_escape {
